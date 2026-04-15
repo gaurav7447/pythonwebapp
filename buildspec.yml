@@ -4,15 +4,15 @@ phases:
   pre_build:
     commands:
       - echo Logging into ECR
-      - aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin <account-id>.dkr.ecr.ap-south-1.amazonaws.com
+      - aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 406990755276.dkr.ecr.ap-south-1.amazonaws.com
 
   build:
     commands:
       - echo Building Docker Image
       - docker build -t my-python-app .
-      - docker tag my-python-app:latest <account-id>.dkr.ecr.ap-south-1.amazonaws.com/my-python-app:latest
+      - docker tag my-python-app:latest 406990755276.dkr.ecr.ap-south-1.amazonaws.com/my-python-app:latest
 
   post_build:
     commands:
       - echo Pushing to ECR
-      - docker push <account-id>.dkr.ecr.ap-south-1.amazonaws.com/my-python-app:latest
+      - docker push 406990755276.dkr.ecr.ap-south-1.amazonaws.com/my-python-app:latest
