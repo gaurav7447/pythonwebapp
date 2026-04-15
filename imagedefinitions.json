@@ -1,0 +1,6 @@
+[
+  {
+    "name": "my-container",
+    "imageUri": "<account-id>.dkr.ecr.ap-south-1.amazonaws.com/my-python-app:latest"
+  }
+]
