@@ -1,6 +1,6 @@
 [
   {
-    "name": "my-container",
+    "name": "pythonwebapp-container",
     "imageUri": "406990755276.dkr.ecr.ap-south-1.amazonaws.com/pythonwebapp:latest"
   }
 ]
