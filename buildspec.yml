@@ -16,3 +16,7 @@ phases:
     commands:
       - echo Pushing to ECR
       - docker push 406990755276.dkr.ecr.ap-south-1.amazonaws.com/pythonwebapp:latest
+
+artifacts:
+  files:
+    - imagedefinitions.json
