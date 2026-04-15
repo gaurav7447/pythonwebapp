@@ -9,10 +9,10 @@ phases:
   build:
     commands:
       - echo Building Docker Image
-      - docker build -t my-python-app .
-      - docker tag my-python-app:latest 406990755276.dkr.ecr.ap-south-1.amazonaws.com/my-python-app:latest
+      - docker build -t pythonwebapp .
+      - docker tag pythonwebapp:latest 406990755276.dkr.ecr.ap-south-1.amazonaws.com/pythonwebapp:latest
 
   post_build:
     commands:
       - echo Pushing to ECR
-      - docker push 406990755276.dkr.ecr.ap-south-1.amazonaws.com/my-python-app:latest
+      - docker push 406990755276.dkr.ecr.ap-south-1.amazonaws.com/pythonwebapp:latest
